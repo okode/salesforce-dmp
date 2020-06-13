@@ -1,0 +1,11 @@
+version: 2.1
+
+orbs:
+  ionic: okode/ionic@volatile
+
+workflows:
+  default:
+    jobs:
+      - ionic/test:
+          name: test
+          skip-tests: true
