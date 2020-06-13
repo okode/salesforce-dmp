@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.okode.salesforcedmp" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Salesforce DMP</name>
+    <name short="Salesforce DMP">salesforce-dmp</name>
     <description>Ionic App with Salesforce DMP</description>
     <author email="support@okode.com" href="https://okode.com/">Okode</author>
     <content src="index.html" />
