@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { DMPPlugin } from 'cordova-plugin-salesforce-dmp/types/index';
+
+declare var DMP: DMPPlugin;
 
 @Component({
   selector: 'app-home',
@@ -7,6 +10,39 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  initialize() {
+    DMP.initialize({ apiKey: 'uwgimqbe0' })
+      .then(success => { console.log(success); })
+      .catch(err => console.log('DMP request error', err));
+  }
+
+  sendRequests() {
+    DMP.sendRequests({ })
+      .then(success => {
+        console.log(success);
+      })
+      .catch(err => { console.log('Dmp request error', err); });
+  }
+
+  trackPage() {
+    DMP.trackPage({
+      email: 'support@okode.com',
+      logged: true,
+      path: '/home',
+      pageType: 'home'
+    })
+      .then(success => { console.log(success); })
+      .catch(err => { console.log('Dmp request error', err); });
+  }
+
+  fireEvent() {
+    DMP.fireEvent({
+      eventAction: 'click',
+      eventCategory: 'button',
+      eventLabel: 'Connect to dmp'
+    })
+      .then(success => { console.log(success); })
+      .catch(err => { console.log('Dmp request error', err); });
+  }
 
 }
