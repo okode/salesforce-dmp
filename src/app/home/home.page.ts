@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DMPPlugin } from 'cordova-plugin-salesforce-dmp/types/index';
+import { DMPPlugin } from 'cordova-plugin-salesforce-dmp';
 
 declare var DMP: DMPPlugin;
 
