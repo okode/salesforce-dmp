@@ -1,5 +1,7 @@
 # Ionic App with Salesforce DMP
 
+[![<okode>](https://circleci.com/gh/okode/salesforce-dmp.svg?style=svg)](https://app.circleci.com/pipelines/github/okode/salesforce-dmp)
+
 Sample Ionic App with Salesforce DMP support.
 
 ## Installing dependencies
