@@ -40,7 +40,7 @@
     "codelyzer": "^5.1.2",
     "cordova-android": "^8.1.0",
     "cordova-ios": "^6.0.0",
-    "cordova-plugin-salesforce-dmp": "file:../cordova-plugin-salesforce-dmp",
+    "cordova-plugin-salesforce-dmp": "github:okode/cordova-plugin-salesforce-dmp",
     "cordova-plugin-device": "^2.0.3",
     "cordova-plugin-ionic-keyboard": "^2.2.0",
     "cordova-plugin-ionic-webview": "^5.0.0",
