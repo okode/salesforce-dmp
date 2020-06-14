@@ -17,7 +17,7 @@ export class HomePage {
   }
 
   sendRequests() {
-    DMP.sendRequests({ })
+    DMP.sendRequests()
       .then(success => {
         console.log(success);
       })
@@ -37,9 +37,9 @@ export class HomePage {
 
   fireEvent() {
     DMP.fireEvent({
-      eventAction: 'click',
-      eventCategory: 'button',
-      eventLabel: 'Connect to dmp'
+      action: 'click',
+      category: 'button',
+      label: 'Connect to dmp'
     })
       .then(success => { console.log(success); })
       .catch(err => { console.log('Dmp request error', err); });
