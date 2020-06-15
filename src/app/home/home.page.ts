@@ -17,7 +17,31 @@ export class HomePage {
   }
 
   sendRequests() {
-    DMP.sendRequests({})
+    const requestParams = {
+      policyRegime: 'gdpr',
+      identity: {
+        idv: '00000000T',
+        dt: 'aaid',
+        idt: 'device'
+      },
+      consent: {
+        dc: 1,
+        cd: 1,
+        tg: 1,
+        al: 1,
+        sh: 0,
+        re: 0
+      }
+    };
+    DMP.sendRequests(requestParams)
+      .then(success => {
+        console.log(success);
+      })
+      .catch(err => { console.log('Dmp request error', err); });
+  }
+
+  getSegments() {
+    DMP.getSegments()
       .then(success => {
         console.log(success);
       })
