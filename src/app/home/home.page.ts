@@ -17,7 +17,7 @@ export class HomePage {
   }
 
   sendRequests() {
-    DMP.sendRequests()
+    DMP.sendRequests({})
       .then(success => {
         console.log(success);
       })
