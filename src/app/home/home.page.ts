@@ -19,11 +19,6 @@ export class HomePage {
   sendRequests() {
     const requestParams = {
       policyRegime: 'gdpr',
-      identity: {
-        idv: '00000000T',
-        dt: 'aaid',
-        idt: 'device'
-      },
       consent: {
         dc: 1,
         cd: 1,
