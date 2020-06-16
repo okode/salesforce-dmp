@@ -53,7 +53,7 @@ export class HomePage {
       email: 'support@okode.com',
       logged: true,
       path: '/home',
-      pageType: 'home'
+      type: 'home'
     })
       .then(success => { console.log(success); })
       .catch(err => { console.log('Dmp request error', err); });
